@@ -1,8 +1,41 @@
 @font-face {
   font-family: "Chakra Petch";
-  src: url("../fonts/Chakra_Petch/ChakraPetch-Regular.ttf");
+  src: url("/fonts/Chakra_Petch/ChakraPetch-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
 }
 
+/* Regular (400) */
+@font-face {
+  font-family: "Chakra Petch";
+  src: url("/fonts/Chakra_Petch/ChakraPetch-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "Chakra Petch";
+  src: url("/fonts/Chakra_Petch/ChakraPetch-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: "Chakra Petch";
+  src: url("/fonts/Chakra_Petch/ChakraPetch-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: "Chakra Petch";
+  src: url("/fonts/Chakra_Petch/ChakraPetch-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
 @font-face {
   font-family: "Days One";
   src: url("../fonts/Days_One/DaysOne-Regular.ttf");
@@ -191,14 +224,16 @@ header {
 #our-game-carousel .carousel-item {
   transition: transform 0.5s ease-in-out;
 }
-
+.carousel-item-element {
+  max-width: 390px;
+  max-height: 300px;
+}
 .carousel-item-element img {
   width: 100%;
 }
 
 .carousel-btn:active {
   border-color: transparent !important;
-
 }
 
 .carousel-btn {
@@ -216,8 +251,8 @@ header {
 .carousel-item-overlay {
   background-image: linear-gradient(
     to top,
-    color-mix(in oklab, var(--default-main-color) 80%, transparent),
-    transparent
+    color-mix(in oklab, var(--default-main-color) 100%, transparent),
+    transparent 60%
   );
   opacity: 0;
   transition: 0.3s all;
@@ -251,6 +286,12 @@ header {
 }
 .carousel-item-element:hover {
   border-color: var(--default-main-color) !important;
+}
+.carousel-item-element img {
+  transition: 0.3s all;
+}
+.carousel-item-element:hover img {
+  transform: scale(1.1);
 }
 
 .carousel-inner {
