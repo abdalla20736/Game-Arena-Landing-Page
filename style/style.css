@@ -206,7 +206,6 @@ header {
 
 .players-info {
   padding: 14px;
-  transform: translate(-10%, 20%);
 }
 .players-info .icon i {
   font-size: 14px;
@@ -523,8 +522,10 @@ header {
   padding-block: 84px;
 }
 
-.team-member-card img {
-  height: 280px;
+.team-member-card,
+.team-member-card img,
+ {
+  overflow: hidden !important;
 }
 
 .team-member-card::before {
@@ -550,6 +551,8 @@ header {
 
 .team-member-card .rotate-badge {
   transform: rotate(90deg);
+  height: 120px;
+  width: 80px;
 }
 
 #contact-us {
