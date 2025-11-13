@@ -4,7 +4,7 @@
 **GameArena** is a modern, interactive gaming platform website that showcases the latest games, esports tournaments, and community features. It features sections such as "Our Games," "What We Do," "Our Team," and a contact form for visitors.
 
 The site is styled for a dynamic gaming-brand feel, with strong visuals, hero banners, metrics (e.g., 2.5M+ active players), and various game categories.  
-[Live Demo]([https://abdalla20736.github.io/Game-Arena-Landing-Page/](https://abdalla20736.github.io/Game-Arena-Landing-Page/))
+[Live Demo][[https://abdalla20736.github.io/Game-Arena-Landing-Page/](https://abdalla20736.github.io/Game-Arena-Landing-Page/)]
 
 ## ✨ Features
 - Hero section with headline: _“THE ULTIMATE GAMING EXPERIENCE”_ and CTA buttons.  
