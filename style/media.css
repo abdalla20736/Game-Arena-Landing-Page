@@ -103,9 +103,7 @@
     height: 56px;
     width: 56px;
   }
-  .sign-in-btn:hover {
-    opacity: 80%;
-  }
+
   .home-inner {
     max-width: 100%;
   }

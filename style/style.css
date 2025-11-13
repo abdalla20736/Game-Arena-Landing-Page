@@ -96,10 +96,26 @@ header {
 }
 
 .btn-hover-shine {
-  overflow: hidden;
-  position: relative;
+  transition: all 0.6s;
+  background-size: 200%;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    transparent,
+    rgba(255, 255, 255, 0.6) 100%,
+    transparent
+  );
+  background-position: 200%;
 }
 
+.btn-hover-shine:hover {
+  background-position: 0%;
+}
+/* .btn-hover-shine {
+  overflow: hidden;
+  position: relative;
+} */
+/* 
 .btn-hover-shine::before {
   position: absolute;
   top: 0;
@@ -119,11 +135,11 @@ header {
 .btn-hover-shine:hover::before {
   width: 100%;
   left: 90%;
-}
+} */
 
-.btn-opacity-80-hover:hover {
+/* .btn-opacity-80-hover:hover {
   opacity: 80%;
-}
+} */
 
 #home .btn-tournament:hover {
   background-color: var(--default-main-color) !important;
@@ -356,6 +372,11 @@ header {
   width: 249px;
   background-color: #1a1a1a;
 }
+
+#what-we-do .info-card h3 {
+  width: 80%;
+}
+
 #what-we-do .info-card-hover {
   transition: 0.3s all;
 }
@@ -523,8 +544,7 @@ header {
 }
 
 .team-member-card,
-.team-member-card img,
- {
+.team-member-card img {
   overflow: hidden !important;
 }
 
@@ -550,9 +570,8 @@ header {
 }
 
 .team-member-card .rotate-badge {
-  transform: rotate(90deg);
-  height: 120px;
-  width: 80px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 #contact-us {
